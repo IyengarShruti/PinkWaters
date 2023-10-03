@@ -6,7 +6,7 @@ const Home =() => {
 
     const handleClick = () =>{
         console.log('clicked')
-
+  
     }
 
 
