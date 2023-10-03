@@ -4,8 +4,6 @@ const Nav =() => {
             Dashboard
         </div>
     )    
-    
-
 }
 
 export default Nav

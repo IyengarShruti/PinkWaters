@@ -4,7 +4,6 @@ const Newuser =() => {
             Newuser
         </div>
     )    
-    
 
 }
 
