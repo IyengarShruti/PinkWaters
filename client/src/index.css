@@ -35,15 +35,12 @@ nav{
 }
 
 nav .applogo-container{
-    width: 170px;
-    margin: 15px;
+    width: 90px;
 
 
 }
 nav .applogo-container .applogo{
     width: 100%;
-    
-
 }
 
 /* Home page */
@@ -58,3 +55,35 @@ nav .applogo-container .applogo{
     );
     
 }
+
+/* The below code is of toolbar */
+
+/* Add a black background color to the top navigation */
+ /* Style for the top navigation bar */
+ .topnav {
+    background-color: rgba(235, 15, 85, 0.929);
+    overflow: hidden;
+}
+
+/* Style for the logo */
+.logo {
+    float: left;
+}
+
+/* Style for the navigation links */
+.topnav a {
+    float: left;
+    color: rgb(249, 244, 244);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Style for the navigation links on hover */
+.topnav a:hover {
+    background-color: #333;
+}
+ 
+
+
+/* The above code is of toolbar */

@@ -4,8 +4,9 @@ const Nav =({authToken}) => {
         <nav>
             <div className = "applogo-container">
                 <img className= "applogo" src={logo2}/>
+                
             </div>
-            {!authToken && <button className="nav-button">Log in</button>}
+            {/* {!authToken && <button className="nav-button">Log in</button>} */}
         </nav>
     )
        
