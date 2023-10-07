@@ -1,12 +1,12 @@
-import logo2 from '../images/logo2.png';
+import logoWithWhite from '../images/logoWithWhite.png'
 const Nav =({authToken}) => {
     return (
         <nav>
-            <div className = "applogo-container">
-                <img className= "applogo" src={logo2}/>
+            {/* <div className = "applogo-container">
+                <img className= "applogo" src={logoWithWhite}/>
                 
-            </div>
-            {/* {!authToken && <button className="nav-button">Log in</button>} */}
+            </div> */}
+            {!authToken && <button className="nav-button">Log in</button>}
         </nav>
     )
        

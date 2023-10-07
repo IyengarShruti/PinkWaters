@@ -1,27 +1,30 @@
 import Nav from "../components/Nav";
-import logo2 from '../images/logo2.png';
+import {useState} from 'react';
+import AuthModal from "../components/AuthModal";
+import care from '../images/care.png';
+
 
 const Home = () => {
-  const authToken = false;
+  const [showModal,setShowModal] = useState(false)
+  const authToken = false
 
   const handleClick = () => {
-    console.log("clicked");
+    console.log("clicked")
+    setShowModal(true)
   };
 
   return (
     <div className="overlay">
-        <div class="topnav">
-            <div class="logo">
-                <img src={logo2} alt="App Logo" height="58"></img>
-            </div>
-            <div>
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#info">Info</a>
-            </div>
-          
-        </div>
+      <header className="myheader">
+      <h2 className="title-container">
+            <img src={care} alt="Icon" className="icon" />
+            <span className="text-dark-blue">Pink</span>
+            <span className="text-pink">Waters</span>
+            <span className="text-slogan"><i>-You are heard</i></span>
+
+        </h2>
+      </header>
+        <Nav authToken ={authToken}/>
       <div className="home">
       
         <h1>PinkWaters</h1>
@@ -29,9 +32,10 @@ const Home = () => {
         <button className="primary-button" onClick={handleClick}>
           {authToken ? "Signout" : "Create Account"}
         </button>
+        { showModal && <AuthModal setShowModal={setShowModal}/> }
       </div>
     </div>
-  );
+  )
 };
 
 export default Home;

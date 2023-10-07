@@ -9,18 +9,18 @@ html,body {
     font-family: 'Montserrat','sans-serif';
 
 }
-.primary-button{
-    color: #fff;
+.primary-button {
+    color: rgb(255,255,255);
     text-transform: uppercase;
     font-size: 15px;
-    background: rgb(161, 36, 57);
-    padding: 12 px 30px;
+    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+    padding: 12px 30px;
+    border-radius: 30px;
     border: none;
-
 }
-.primary-button:hover{
-    background:#876cdf ;
-    color: #000;
+
+.primary-button:hover {
+    background: linear-gradient(260deg, rgb(254, 48, 114), rgb(255, 89, 64));
 }
 
 body{
@@ -29,61 +29,95 @@ body{
 /* nav bar */
 nav{
     width: 100%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
+    background: white;
+    border-radius: 30px;
+    padding: 0 30px; /* 20px padding on the left and right */
+    box-sizing: border-box; /* Include padding in the total width */
+
+
 
 }
 
-nav .applogo-container{
-    width: 90px;
+nav .nav-button {
+    color: rgb(255,255,255);
+    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
+    font-size: 16px; /* Decreased font size */
+    padding: 5px 8px; /* Decreased padding */
+    border-radius: 8px; /* Decreased border radius */
+    border: none;
+    margin: 12px; /* Decreased margin */
+    width: 20px 60px;
+    margin-left: auto; /* Push the button to the right */
+    margin-left: auto; /* Push the button to the right */
+}
+
+/* nav .applogo-container{
+    width: 170px;
+    margin: 15px;
 
 
 }
 nav .applogo-container .applogo{
     width: 100%;
-}
+} */
 
 /* Home page */
-.overlay{
+.overlay {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     position: fixed;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 192, 203, 1) 0%,
-        rgba(168, 34, 56, 1) 100%
-    );
-    
+    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+
 }
 
-/* The below code is of toolbar */
 
-/* Add a black background color to the top navigation */
- /* Style for the top navigation bar */
- .topnav {
-    background-color: rgba(235, 15, 85, 0.929);
-    overflow: hidden;
+/* Auth Modal */
+
+.auth-modal{
+    position: relative;
+    top: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    height: 600px;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 40px;
+}
+/* header */
+
+.myheader{
+    text-align: left;
+    color: rgb(186, 82, 99);
+    background-color: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+    height: 5%;
 }
 
-/* Style for the logo */
-.logo {
-    float: left;
+/* Icon Styling (Replace with actual styles for your icon) */
+/* Icon Styling */
+.icon {
+    width: 30px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add spacing between the icon and text */
 }
 
-/* Style for the navigation links */
-.topnav a {
-    float: left;
-    color: rgb(249, 244, 244);
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
+/* Text Styling */
+.text-dark-blue {
+    color: darkblue; /* Change to your preferred dark blue color */
 }
 
-/* Style for the navigation links on hover */
-.topnav a:hover {
-    background-color: #333;
+.text-pink {
+    color: rgb(140, 51, 66); /* Change to your preferred pink color */
 }
- 
+.text-slogan {
 
+    color: black /* Change to your preferred pink color */
+}
 
-/* The above code is of toolbar */
+/* Title Container Styling */
+.title-container {
+    padding-left: 20px; /* Add padding from the left side of the icon */
+}
