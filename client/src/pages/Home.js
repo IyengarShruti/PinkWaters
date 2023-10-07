@@ -15,6 +15,8 @@ const Home = () => {
 
   return (
     <div className="overlay">
+      {/* header */}
+
       <header className="myheader">
       <h2 className="title-container">
             <img src={care} alt="Icon" className="icon" />
@@ -24,7 +26,10 @@ const Home = () => {
 
         </h2>
       </header>
+        {/* Nav bar */}
+
         <Nav authToken ={authToken}/>
+        {/* div for home that contains name of the brand and create acc button */}
       <div className="home">
       
         <h1>PinkWaters</h1>

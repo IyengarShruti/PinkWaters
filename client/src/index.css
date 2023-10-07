@@ -9,6 +9,69 @@ html,body {
     font-family: 'Montserrat','sans-serif';
 
 }
+
+
+body{
+    text-align: center;
+}
+/* --------------------------------------------Nav Bar------------------------------------------------------ */
+nav{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+    border-radius: 30px;
+    padding: 0 30px; /* 20px padding on the left and right */
+    box-sizing: border-box; /* Include padding in the total width */
+
+
+
+}
+/* Nav Menu Items Styling */
+.nav-list {
+    list-style: none; /* Remove list-style (bullet points) */
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list .nav-item {
+    margin-right: 20px; /* Adjust the spacing between menu items */
+    font-size: 25px !important; /* Add font size for menu items */
+}
+
+/* Styling for the "Log in" button */
+.nav-button {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 15px;
+    background: transparent;
+    border-radius: 30px;
+    border: none;
+}
+
+/* Hover effect for menu items and "Log in" button */
+.nav-item:hover,
+.nav-button:hover {
+    color: #000000; /* Change the text color on hover */
+    background: linear-gradient(45deg, rgb(173, 161, 165), rgb(188, 181, 180));
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* --------------------------------------------Home Page------------------------------------------------------ */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
+
+}
+
+/* --------------------------------------------Create account button------------------------------------------------------ */
+
 .primary-button {
     color: rgb(255,255,255);
     text-transform: uppercase;
@@ -23,58 +86,8 @@ html,body {
     background: linear-gradient(260deg, rgb(254, 48, 114), rgb(255, 89, 64));
 }
 
-body{
-    text-align: center;
-}
-/* nav bar */
-nav{
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: space-between;
-    background: white;
-    border-radius: 30px;
-    padding: 0 30px; /* 20px padding on the left and right */
-    box-sizing: border-box; /* Include padding in the total width */
 
-
-
-}
-
-nav .nav-button {
-    color: rgb(255,255,255);
-    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
-    font-size: 16px; /* Decreased font size */
-    padding: 5px 8px; /* Decreased padding */
-    border-radius: 8px; /* Decreased border radius */
-    border: none;
-    margin: 12px; /* Decreased margin */
-    width: 20px 60px;
-    margin-left: auto; /* Push the button to the right */
-    margin-left: auto; /* Push the button to the right */
-}
-
-/* nav .applogo-container{
-    width: 170px;
-    margin: 15px;
-
-
-}
-nav .applogo-container .applogo{
-    width: 100%;
-} */
-
-/* Home page */
-.overlay {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    background: linear-gradient(to right, #cdffd8 0%, #94b9ff 100%);
-
-}
-
-
-/* Auth Modal */
+/* --------------------------------------------Auth Modal------------------------------------------------------ */
 
 .auth-modal{
     position: relative;
@@ -87,7 +100,7 @@ nav .applogo-container .applogo{
     border-radius: 10px;
     padding: 40px;
 }
-/* header */
+/* --------------------------------------------header------------------------------------------------------ */
 
 .myheader{
     text-align: left;
@@ -96,15 +109,14 @@ nav .applogo-container .applogo{
     height: 5%;
 }
 
-/* Icon Styling (Replace with actual styles for your icon) */
 /* Icon Styling */
 .icon {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
     margin-right: 10px; /* Add spacing between the icon and text */
 }
 
-/* Text Styling */
+/* Text Styling of header */
 .text-dark-blue {
     color: darkblue; /* Change to your preferred dark blue color */
 }
@@ -117,7 +129,7 @@ nav .applogo-container .applogo{
     color: black /* Change to your preferred pink color */
 }
 
-/* Title Container Styling */
+/* Title Container Styling /header*/
 .title-container {
     padding-left: 20px; /* Add padding from the left side of the icon */
 }
