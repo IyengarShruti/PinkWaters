@@ -1,0 +1,65 @@
+.main-cards {
+    width: 1440px;
+    height: 952px;
+    top: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .card-body {
+    width: 1120px;
+    height: auto;
+    top: 161px;
+    left: 160px;
+    gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card-features {
+    width: 1120px;
+    height: auto;
+    gap: 28px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card-title {
+    width: 1120px;
+    height: 74px;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1F2D5A;
+  }
+  
+  .card-subtitle {
+    width: 1120px;
+    height: 29px;
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+    background-image: linear-gradient(0deg, #2F76DB, #2F76DB),
+      linear-gradient(0deg, #1F2D5A, #1F2D5A);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .card-frame {
+    width: 1120px;
+    height: auto;
+    gap: 80px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  

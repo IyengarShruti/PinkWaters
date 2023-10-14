@@ -1,6 +1,7 @@
 import Nav from "../components/Nav";
 import { useState } from "react";
 import AuthModal from "../components/AuthModal";
+import Cards from "../components/Cards";
 
 import peoplenobg from "../images/peoplenobg.png";
 
@@ -56,6 +57,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Cards/>
     </div>
   );
 };
