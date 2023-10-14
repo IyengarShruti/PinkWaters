@@ -1,6 +1,10 @@
 import logoWithWhite from '../images/logoWithWhite.png'
 
-const Nav = ({ authToken }) => {
+const Nav = ({ authToken, setShowModal, showModal, setIsSignUp }) => {
+    const handleClick = () =>{
+        setShowModal(true)
+        setIsSignUp(false)
+    }
     return (
         <nav>
             <div className="navbar-container">
@@ -15,7 +19,10 @@ const Nav = ({ authToken }) => {
                         <button className="nav-button">Contact</button>
                     </li>
                     <li className="nav-item">
-                        {!authToken && <button className="nav-button">Log in</button>}
+                        {!authToken && <button className="nav-button"
+                        onClick={handleClick}
+                        disabled = {showModal}
+                        >Log in</button>}
                     </li>
                 </ul>
             </div>
