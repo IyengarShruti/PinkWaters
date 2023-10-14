@@ -24,17 +24,49 @@ h2{
 }
 
 
+/* Text Styling */
+.text-dark-blue {
+    color: darkblue; /* Change to your preferred dark blue color */
+    font-family: Segoe UI;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 74.48px;
+   
 
+}
+
+
+.text-pink {
+    color: rgb(140, 51, 66); /* Change to your preferred pink color */
+    font-family: Segoe UI;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 74.48px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.title-container {
+  margin: 0;
+  padding-left: 20px; /* Add padding from the left side of the icon */
+  font-family: Segoe UI;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 74.48px;
+    letter-spacing: 0em;
+    text-align: left;
+   
+  
+}
 
 
 /* --------------------------------------------Nav Bar------------------------------------------------------ */
 nav{
     width: 100%;
-    height: 5%;
+    height: 10%;
     display: flex;
     justify-content: space-between;
-    background: transparent;
-    border-radius: 30px;
+    /* background:linear-gradient(to right, #cdffd8 0%, #94b9ff 100%); */
     padding: 0 40px; /* 20px padding on the left and right */
     box-sizing: border-box; /* Include padding in the total width */
 
@@ -42,27 +74,41 @@ nav{
 
 }
 /* Nav Menu Items Styling */
+
+
+
+/* Styling for the "Log in" button */
 .nav-list {
-    list-style: none; /* Remove list-style (bullet points) */
-    padding: 0;
-    /* display: flex; */
-    align-items: center; 
-    float: right;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
 }
 
-.nav-list .nav-item {
-    margin: 0 20px; /* Adjust the spacing between menu items */
-    font-size: 18px; /* Font size for menu items */
-    display: inline; /* Display menu items inline */
+.nav-item {
+  margin: 0 20px;
+  font-size: 18px;
 }
+
+
+/* Other CSS styles remain unchanged */
+
+
 
 /* Styling for the "Log in" button */
 .nav-button {
-    color: rgb(0, 0, 0);
+    /* color: rgb(0, 0, 0);
     text-transform: uppercase;
     font-size: 15px;
     background: transparent;
     border-radius: 30px;
+    border: none; */
+
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(45deg, rgb(254, 48, 114), rgb(255, 89, 64));
     border: none;
 }
 
@@ -71,7 +117,6 @@ nav{
 .nav-button:hover {
     color: #000000; /* Change the text color on hover */
     background: linear-gradient(45deg, rgb(173, 161, 165), rgb(188, 181, 180));
-    border-radius: 30px;
     border: none;
 }
 
@@ -176,14 +221,17 @@ border: solid 2px rgb(66, 64, 64);
     position: relative;
 
   }
-  
   .inner-container {
     width: 1115px;
     height: 487px;
-    top: 126px;
-    left: 160px;
+    top: 50px; /* Adjust this value to move it higher */
+    left: calc((50% - 1115px/2)); /* Center horizontally with the same margin on both sides */
+    right: calc((50% - 1115px/2)); /* Set the same margin on the right side */
     position: relative;
-  }
+}
+
+
+
   
   .how-it-works {
     width: 147px;
@@ -270,14 +318,16 @@ border: solid 2px rgb(66, 64, 64);
     color: #1f2d5a;
   }
  
-  .chart {
-    width: 538.5px;
-    height: 403.26px;
-    top: 83.74px;
-    left: 576px;
+  /* Chart Styling */
+/* Chart Styling */
+.chart {
+  width: 538.5px;
+  height: 403.26px;
+  position: relative;
+  top: -90px; /* Adjust this value as needed */
+  left: -20px; /* Adjust this value to shift it left */
+}
 
-  }
-  
 
 
 
@@ -285,6 +335,7 @@ border: solid 2px rgb(66, 64, 64);
     display: flex;
     flex-direction: column;
     align-items: flex-start; /* Adjust alignment as needed */
-    margin-top: 20px; /* Add margin to create space between the "C_text" and the button */
+    margin-top: 20px; 
+    /* Add margin to create space between the "C_text" and the button */
   }
   
